@@ -1,6 +1,8 @@
 # Ebay-search-chalogocartchalo
 A webpage that allows users to search items for sale on eBay.com using their API.
 
+Reference video for this Homework 6 in CSCI 571 class: https://youtu.be/a1uB_MaxRqo
+
 Steps:
 
 1. Clone the repository
