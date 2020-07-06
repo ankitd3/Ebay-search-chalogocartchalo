@@ -1,0 +1,160 @@
+html{
+    scroll-behavior: smooth;
+}
+.textSt{
+    font-weight: bold;
+    font-family: serif;
+}
+#heading{
+    text-align: center;
+    margin-bottom: 0.6em;
+}
+#shopping{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 2.3em;
+    font-weight: bold;
+    margin-bottom: -0.6em;
+}
+#formdiv{
+    margin: auto;
+    width: max-content;
+    border: 0.08rem;
+    border-style: solid;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 9px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* ----------- */
+#extraItems, #location, #crossButton{
+    display: none;
+}
+
+  .outer{
+    border: 0.1rem;
+    border-style: solid;
+    border-radius: 6px;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F6F5F6;
+    position: relative;
+    margin-bottom: 0.3em;
+  }
+  .outer:hover{
+    box-shadow: 0 5px 15px grey;
+  }
+  img.product:hover{  
+     transform: scale(2);
+    -webkit-transition: transform 0.7s ease-in-out;
+    z-index: 100;
+  }
+  img.product{
+    display: inline-block;
+    max-height: 400px;
+    max-width: 14%;
+    border: 3px;
+    border-style: solid;
+    border-color: rgb(168, 168, 168);
+    margin-left: auto;
+    margin-right: auto;
+    position:absolute;
+    left:7%;
+    right:80%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    max-height: 96%;
+  }
+  img.topratedimage{
+    display: inline-block;
+    height: 45px;
+    margin-left: 10px;
+    margin-bottom: -14px;
+    margin-top: -14px;
+  }
+  #inner{
+    margin-left: 28%;
+    width: 71%;
+  }
+  
+  #b {
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }
+  img.redirect{
+    display: inline-block;
+    height: 18px;
+    opacity: 0.5;
+    margin-top: -9px;
+    margin-left: 2px;
+  }
+  img.redirect:hover{
+    display: inline-block;
+    height: 18px;
+    opacity: 1;
+    margin-top: -9px;
+    margin-left: 2px;
+  }
+  .boom{
+    font-size: 1em;
+    margin-bottom: 23px;
+  }
+  .extra{
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+  
+/* -------------------- */
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: black;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+    margin:auto;
+    display:block;
+  }
+  
+  .button1 {
+    background-color: rgb(219, 219, 219); 
+    color: black; 
+  }
+  .button2 {
+    background-color: rgb(219, 219, 219); 
+    color: black; 
+    display: inherit;
+    margin-right: 1.5px;
+    margin-left: 1.5px;
+    padding: 5px 4px;
+    font-size: smaller;
+  }
+  .button2:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  .button1:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  

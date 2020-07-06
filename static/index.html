@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./static/index.css">
+    <title>Ebay-App</title>
+</head>
+<body>
+    <script src="./static/index.js"></script>
+    <div id="heading">
+        <a href="https://ebay.com" target="_blank"><img style="height: 80px; width: 172px; display: inline-block; vertical-align: middle;" src="https://www.csci571.com/hw/hw6/images/eBayLogo.png"/></a>
+        <span id="shopping">Shopping</span>
+    </div>
+    <div id="formdiv">
+      <form onsubmit="return validate(event)" id="myForm">
+        <table>
+            <tr>
+              <td>
+                  <span class="textSt">Key Words</span><span style="color: red;">*</span><span class="textSt">: </span><input required type="text" name="keyword"></td>
+            </tr>
+            <tr>
+              <td>
+                <span class="textSt">Price Range:</span><span style="font-family: serif; margin-left: 7px; margin-right: 7px;">  From  </span><input style="width:45px; margin-right: 7px;" type="number" name="MinPrice" step="0.1"><span style="font-family: serif;">  to  </span><input style="width:45px; margin-left: 7px;"  type="number" name="MaxPrice" step="0.1"></td>
+            </tr>
+            <tr>
+                <td>
+                  <span class="textSt">Condition:</span> 
+                  <input type="checkbox" name="new" value="1000"> <span style="font-family: serif;">New</span>  
+                  <input type="checkbox" name="used" value="3000"> <span style="font-family: serif;">Used</span> 
+                  <input type="checkbox" name="verygood" value="4000"> <span style="font-family: serif;">Very Good </span>
+                  <input type="checkbox" name="good" value="5000"> <span style="font-family: serif;">Good </span>
+                  <input type="checkbox" name="acceptable" value="6000"> <span style="font-family: serif;">Acceptable </span>
+                </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="textSt">Seller:</span> <input type="checkbox" name="ReturnsAcceptedOnly"> <span style="font-family: serif;">Return Accepted</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="textSt">Shipping:</span> <input type="checkbox" name="FreeShippingOnly"> <span style="font-family: serif;">Free</span> <input type="checkbox" name="ExpeditedShippingType"><span style="font-family: serif;"> Expedited </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="textSt">Sort by:</span>  <select name="sortby" id="sort" style="text-align-last:center;">
+                                <option value="BestMatch">Best Match</option>
+                                <option value="CurrentPriceHighest">Price: highest first</option>
+                                <option value="PricePlusShippingHighest">Price + Shipping: highest first</option>
+                                <option value="PricePlusShippingLowest">Price + Shipping: lowest first</option>
+                            </select>
+              </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="reset" value="Clear" class="button button2" onclick="getElementById('result').innerHTML='';"> <input type="submit" value="Search" class="button button2">
+                </td>
+              </tr>
+          </table>
+        </form>
+    </div>
+    
+    <div id="result">
+
+    </div>
+</body>
+</html>
