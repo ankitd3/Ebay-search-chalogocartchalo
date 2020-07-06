@@ -1,9 +1,15 @@
 # Ebay-search-chalogocartchalo
 A webpage that allows users to search items for sale on eBay.com using their API.
 
-Reference video for this Homework 6 in CSCI 571 class: https://youtu.be/a1uB_MaxRqo
+**Tools**: Flask, JavaScript, HTML, CSS, HTML DOM, Fetch API, JSON, eBay API
 
-Steps:
+	Backend with Flask framework parses and filters the response from the Ebay “findItemsAdvanced” API.
+	It returns the results in JSON format to the frontend written in Vanilla JavaScript.
+	JavaScript file traverses through the response and generates HTML.
+
+**Reference video** for this Homework 6 in CSCI 571 class: https://youtu.be/a1uB_MaxRqo
+
+**Steps**:
 
 1. Clone the repository
 2. Sign up for a Ebay developer account to obtain the API key. Paste your key in the app.py file, [here](https://github.com/ankitd3/Ebay-search-chalogocartchalo/blob/93588f1efe633e31be3f2a35446054a639990a3e/app.py#L9). Alternatively, you may set it as an environment variable and access it.
